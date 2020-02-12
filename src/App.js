@@ -69,10 +69,10 @@ function Body(){
           if(mode==='hourly') return d.temperature
           else return (d.temperatureHigh+d.temperatureLow)/2
         }),
-        backgroundColor: 'rgba(132,99,255,0.2)',
-        borderColor: 'rgba(132,99,255,1)',
-        hoverBackgroundColor: 'rgba(132,99,255,0.4)',
-        hoverBorderColor: 'rgba(132,99,255,1)',
+        backgroundColor: 'rgba(255,116,23,0.2)',
+        borderColor: 'rgba(255,116,23,1)',
+        hoverBackgroundColor: 'rgba(255,116,23,0.4)',
+        hoverBorderColor: 'rgba(255,116,23,1)',
       }]
     }
   }
@@ -114,4 +114,3 @@ export default App;
 function cap(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
