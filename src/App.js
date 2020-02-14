@@ -14,7 +14,9 @@ function App() {
   })
   return <context.Provider value={{
     ...state,
-    set: v=> setState({...state, ...v})
+    set: v=> setState(current=> {
+      return {...current, ...v}
+    })
   }}>
     <div className="App">
       <Header />
